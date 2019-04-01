@@ -1,0 +1,5 @@
+baseURL = "https://adl32x.github.io/sailfoot-docs/"
+languageCode = "en-us"
+title = "Sailfoot"
+theme = "book"
+publishDir = "docs"
