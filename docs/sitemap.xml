@@ -3,13 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://adl32x.github.io/sailfoot-docs/docs/1.-installation-and-basics/</loc>
+  </url>
+  
+  <url>
+    <loc>https://adl32x.github.io/sailfoot-docs/docs/2.-keywords/</loc>
+  </url>
+  
+  <url>
+    <loc>https://adl32x.github.io/sailfoot-docs/docs/3.-examples/</loc>
+  </url>
+  
+  <url>
+    <loc>https://adl32x.github.io/sailfoot-docs/docs/4.-misc/</loc>
+  </url>
+  
+  <url>
+    <loc>https://adl32x.github.io/sailfoot-docs/docs/5.-server/</loc>
+  </url>
+  
+  <url>
     <loc>https://adl32x.github.io/sailfoot-docs/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://adl32x.github.io/sailfoot-docs/</loc>
+    <loc>https://adl32x.github.io/sailfoot-docs/docs/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://adl32x.github.io/sailfoot-docs/</loc>
   </url>
   
   <url>

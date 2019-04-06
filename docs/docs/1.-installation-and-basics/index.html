@@ -1,11 +1,9 @@
 <!DOCTYPE html><html>
 
 <head>
-	<meta name="generator" content="Hugo 0.54.0" />
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>
-    Introduction | Sailfoot</title>
+<title>1. Installation and Basics | Sailfoot</title>
 
 <link href="https://fonts.googleapis.com/css?family=Oxygen|Oxygen+Mono:300,400,700" rel="stylesheet">
 <link rel="stylesheet" href="/sailfoot-docs/normalize.min.css">
@@ -47,7 +45,7 @@ https://github.com/alex-shpak/hugo-book
 
     
     <li>
-      <a href="/sailfoot-docs/docs/1.-installation-and-basics/">1. Installation and Basics</a>
+      <a href="/sailfoot-docs/docs/1.-installation-and-basics/" class="active">1. Installation and Basics</a>
     </li>
     
     <li>
@@ -83,27 +81,36 @@ https://github.com/alex-shpak/hugo-book
   <label for="menu-control">
     <img src="/sailfoot-docs/svg/menu.svg" />
   </label>
-  <strong>
-    Introduction</strong>
+  <strong>1. Installation and Basics</strong>
 </header>
 
       
 <article class="markdown">
 
-<h1 id="introduction">Introduction</h1>
+<h1 id="installation-and-basics">Installation and basics</h1>
 
-<p>Sailfoot is a software for controlling browsers for the purpose of end-to-end testing, scraping and other automation.</p>
+<p>Grab the binary from the <a href="https://github.com/adl32x/sailfoot/releases">release page</a>. You will also need either a selenium server, or a webdriver like chromedriver.</p>
 
-<p>Design philosophies:</p>
+<h2 id="running">Running</h2>
 
-<ul>
-<li>Easy to use (straightforward scripting, small learning curve)</li>
-<li>Easy to install, just a single binary</li>
-</ul>
+<p>Run the binary. <code>sf</code></p>
 
-<h2 id="github">Github</h2>
+<h2 id="basics">Basics</h2>
 
-<p><a href="https://github.com/adl32x/sailfoot">Read about the project in Github.</a></p>
+<p>Sailfoot is built around simple concepts instead of fancy configuration. Your start configuration goes into <code>start.txt</code> and everything else (keywords and test case configuration) inside the directory <code>keywords/</code>.</p>
+
+<p>You can also use the <code>-file</code> flag to change the location of your start script.</p>
+
+<h2 id="hello-world">Hello world</h2>
+
+<p>start.txt:</p>
+
+<pre><code>navigate https://url_to_hello_world
+
+has_text 'Hello world!'
+</code></pre>
+
+<p>Run <code>sf</code>.</p>
 </article>
 
       
@@ -116,9 +123,11 @@ https://github.com/alex-shpak/hugo-book
   <aside class="book-toc fixed">
     <nav id="TableOfContents">
 <ul>
-<li><a href="#introduction">Introduction</a>
+<li><a href="#installation-and-basics">Installation and basics</a>
 <ul>
-<li><a href="#github">Github</a></li>
+<li><a href="#running">Running</a></li>
+<li><a href="#basics">Basics</a></li>
+<li><a href="#hello-world">Hello world</a></li>
 </ul></li>
 </ul>
 </nav>

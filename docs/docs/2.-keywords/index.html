@@ -1,0 +1,216 @@
+<!DOCTYPE html><html>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2. Keywords | Sailfoot</title>
+
+<link href="https://fonts.googleapis.com/css?family=Oxygen|Oxygen+Mono:300,400,700" rel="stylesheet">
+<link rel="stylesheet" href="/sailfoot-docs/normalize.min.css">
+
+<link rel="stylesheet" href="/sailfoot-docs/book.min.b19e39655cbb35014c212261acf02c44c22b653e1183471f8513702b5bfd8f54.css">
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+
+<body>
+  <input type="checkbox" style="display: none" id="menu-control" />
+  <main class="flex container">
+
+    <aside class="book-menu fixed">
+      <nav role="navigation">
+<h2 class="book-brand">
+  <a href="https://adl32x.github.io/sailfoot-docs/">Sailfoot</a>
+</h2>
+<img style="width: 70%; margin-top: 15px; margin-bottom: 15px;" src="/sailfoot-docs/logo.svg">
+<br>
+<a href="/sailfoot-docs"><b>Home</b></a>
+
+
+    
+
+
+  
+  
+    
+    
+  
+ 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/sailfoot-docs/docs/1.-installation-and-basics/">1. Installation and Basics</a>
+    </li>
+    
+    <li>
+      <a href="/sailfoot-docs/docs/2.-keywords/" class="active">2. Keywords</a>
+    </li>
+    
+    <li>
+      <a href="/sailfoot-docs/docs/3.-examples/">3. Examples</a>
+    </li>
+    
+    <li>
+      <a href="/sailfoot-docs/docs/4.-misc/">4. Misc</a>
+    </li>
+    
+    <li>
+      <a href="/sailfoot-docs/docs/5.-server/">5. Server</a>
+    </li>
+    
+  </ul>
+
+
+
+
+
+
+
+
+</nav>
+    </aside>
+
+    <div class="book-page">
+      <header class="align-center justify-between book-header">
+  <label for="menu-control">
+    <img src="/sailfoot-docs/svg/menu.svg" />
+  </label>
+  <strong>2. Keywords</strong>
+</header>
+
+      
+<article class="markdown">
+
+<h1 id="keywords">Keywords</h1>
+
+<h2 id="built-in-keywords">Built-in keywords</h2>
+
+<table>
+<thead>
+<tr>
+<th>Keyword</th>
+<th>Arguments</th>
+<th>Example</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>has_text</td>
+<td>text</td>
+<td>has_text &lsquo;Hello world!&rsquo;</td>
+</tr>
+
+<tr>
+<td>has_text</td>
+<td>selector, text</td>
+<td>has_text &lsquo;.class&rsquo; &lsquo;Hello world!&rsquo;</td>
+</tr>
+
+<tr>
+<td>click</td>
+<td>selector</td>
+<td>click &lsquo;.button&rsquo;</td>
+</tr>
+
+<tr>
+<td>click_on_text</td>
+<td>text</td>
+<td>click &lsquo;Log in&rsquo;</td>
+</tr>
+
+<tr>
+<td>click_closest_to</td>
+<td>selector, selector</td>
+<td>click_closest_to &lsquo;.username&rsquo; &lsquo;.button&rsquo;</td>
+</tr>
+
+<tr>
+<td>input</td>
+<td>text</td>
+<td>input &lsquo;andy&rsquo;</td>
+</tr>
+
+<tr>
+<td>input</td>
+<td>selector, text</td>
+<td>input &lsquo;.username&rsquo; &lsquo;andy&rsquo;</td>
+</tr>
+
+<tr>
+<td>read</td>
+<td>selector, variable</td>
+<td>read &lsquo;.username&rsquo; &lsquo;USERNAME&rsquo;</td>
+</tr>
+
+<tr>
+<td>execute</td>
+<td>text</td>
+<td>execute &lsquo;ls -l&rsquo;</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="writing-your-own-keywords">Writing your own keywords</h3>
+
+<p>Making your keyword is as simple as putting it under a directory named <code>keywords/</code> and saving it into a .txt file. The filename will be the name of the keyword.</p>
+
+<pre><code>├── keywords
+│   ├── keyword1.txt
+│   ├── keyword2.txt
+│   └── ... .txt
+└── start.txt
+</code></pre>
+
+<h4 id="arguments">Arguments</h4>
+
+<p>Arguments end up in variables 0..9:</p>
+
+<pre><code>log 'Sample keyword with arguments'
+input '.long-boring-selector &gt; div &gt; ... $$0$$' $$1$$
+</code></pre>
+
+<p>If you save this as <code>keyword.txt</code> you can then use it like this:</p>
+
+<p><code>keyword '.username' 'admin'</code></p>
+</article>
+
+      
+
+    </div>
+
+    
+  
+  
+  <aside class="book-toc fixed">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#keywords">Keywords</a>
+<ul>
+<li><a href="#built-in-keywords">Built-in keywords</a>
+<ul>
+<li><a href="#writing-your-own-keywords">Writing your own keywords</a>
+<ul>
+<li><a href="#arguments">Arguments</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+
+
+
+  </main>
+
+  
+  
+</body>
+
+</html>
